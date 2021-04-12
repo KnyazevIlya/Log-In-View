@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		BC15DFD12624BB8A00A5CF36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFD02624BB8A00A5CF36 /* AppDelegate.swift */; };
 		BC15DFD32624BB8A00A5CF36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFD22624BB8A00A5CF36 /* SceneDelegate.swift */; };
-		BC15DFD52624BB8A00A5CF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFD42624BB8A00A5CF36 /* ViewController.swift */; };
+		BC15DFD52624BB8A00A5CF36 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFD42624BB8A00A5CF36 /* LogInViewController.swift */; };
 		BC15DFD82624BB8A00A5CF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC15DFD62624BB8A00A5CF36 /* Main.storyboard */; };
 		BC15DFDA2624BB8D00A5CF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC15DFD92624BB8D00A5CF36 /* Assets.xcassets */; };
 		BC15DFDD2624BB8D00A5CF36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC15DFDB2624BB8D00A5CF36 /* LaunchScreen.storyboard */; };
+		BC15DFEE2624C9FA00A5CF36 /* LogedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFED2624C9FA00A5CF36 /* LogedInViewController.swift */; };
+		BC15DFF22624CCBF00A5CF36 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFF12624CCBF00A5CF36 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC15DFCD2624BB8A00A5CF36 /* Log In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Log In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC15DFD02624BB8A00A5CF36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC15DFD22624BB8A00A5CF36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC15DFD42624BB8A00A5CF36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC15DFD42624BB8A00A5CF36 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		BC15DFD72624BB8A00A5CF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC15DFD92624BB8D00A5CF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC15DFDC2624BB8D00A5CF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC15DFDE2624BB8D00A5CF36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC15DFED2624C9FA00A5CF36 /* LogedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogedInViewController.swift; sourceTree = "<group>"; };
+		BC15DFF12624CCBF00A5CF36 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		BC15DFCF2624BB8A00A5CF36 /* Log In */ = {
 			isa = PBXGroup;
 			children = (
-				BC15DFD02624BB8A00A5CF36 /* AppDelegate.swift */,
-				BC15DFD22624BB8A00A5CF36 /* SceneDelegate.swift */,
-				BC15DFD42624BB8A00A5CF36 /* ViewController.swift */,
-				BC15DFD62624BB8A00A5CF36 /* Main.storyboard */,
-				BC15DFD92624BB8D00A5CF36 /* Assets.xcassets */,
-				BC15DFDB2624BB8D00A5CF36 /* LaunchScreen.storyboard */,
-				BC15DFDE2624BB8D00A5CF36 /* Info.plist */,
+				BC15DFF02624CCA600A5CF36 /* Model */,
+				BC15DFE82624BC5200A5CF36 /* View */,
+				BC15DFE72624BC2D00A5CF36 /* Supportive files */,
+				BC15DFE62624BC1D00A5CF36 /* Resources */,
+				BC15DFE52624BC0F00A5CF36 /* Controller */,
 			);
 			path = "Log In";
+			sourceTree = "<group>";
+		};
+		BC15DFE52624BC0F00A5CF36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC15DFD42624BB8A00A5CF36 /* LogInViewController.swift */,
+				BC15DFED2624C9FA00A5CF36 /* LogedInViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC15DFE62624BC1D00A5CF36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC15DFD92624BB8D00A5CF36 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC15DFE72624BC2D00A5CF36 /* Supportive files */ = {
+			isa = PBXGroup;
+			children = (
+				BC15DFD02624BB8A00A5CF36 /* AppDelegate.swift */,
+				BC15DFDE2624BB8D00A5CF36 /* Info.plist */,
+			);
+			path = "Supportive files";
+			sourceTree = "<group>";
+		};
+		BC15DFE82624BC5200A5CF36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC15DFD22624BB8A00A5CF36 /* SceneDelegate.swift */,
+				BC15DFD62624BB8A00A5CF36 /* Main.storyboard */,
+				BC15DFDB2624BB8D00A5CF36 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC15DFF02624CCA600A5CF36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC15DFF12624CCBF00A5CF36 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC15DFD52624BB8A00A5CF36 /* ViewController.swift in Sources */,
+				BC15DFD52624BB8A00A5CF36 /* LogInViewController.swift in Sources */,
 				BC15DFD12624BB8A00A5CF36 /* AppDelegate.swift in Sources */,
 				BC15DFD32624BB8A00A5CF36 /* SceneDelegate.swift in Sources */,
+				BC15DFF22624CCBF00A5CF36 /* User.swift in Sources */,
+				BC15DFEE2624C9FA00A5CF36 /* LogedInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832H9LUWZZ;
-				INFOPLIST_FILE = "Log In/Info.plist";
+				INFOPLIST_FILE = "Log In/Supportive files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832H9LUWZZ;
-				INFOPLIST_FILE = "Log In/Info.plist";
+				INFOPLIST_FILE = "Log In/Supportive files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
